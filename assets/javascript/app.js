@@ -1,4 +1,5 @@
 
+
 var time = 100;
 var intervalId;
 
@@ -10,7 +11,7 @@ function run() {
 function decrement() {
     time--;
     $('#show-number').text(time);
-    if (number === 0) {
+    if (time === 0) {
         stop();
     }
 }
@@ -22,6 +23,11 @@ function stop() {
 
 
   run();
+
+  $('#start').on('click', function(){
+    $('#questions').show();
+    $('#start').hide();
+  });
 
 
 
