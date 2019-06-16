@@ -31,7 +31,7 @@
     </div>
   </div>
 
-  <div id='questions'>
+  <div class='questions'>
 
 
 
@@ -43,38 +43,49 @@
       </div>
   </div>
 
-  <div class='row'>
+  <div class='row' id='question-one'>
       <div class='col-md-12'>
           <div class='text-center'>
               <h4>Fritzi is a cat.</h4>
-              <button type="button" class="btn btn-primary btn-sm">True</button>
+              <button type="button" class="btn btn-primary btn-sm" id='correct-one'>True</button>
               <button type="button" class="btn btn-primary btn-sm">False</button>
           </div>
       </div>
   </div>
 
-  <div class='row'>
+  <div class='row' id='question-two'>
         <div class='col-md-12'>
             <div class='text-center'>
                 <h4>She is well behaved.</h4>
                 <button type="button" class="btn btn-primary btn-sm">True</button>
-                <button type="button" class="btn btn-primary btn-sm">False</button>
+                <button type="button" class="btn btn-primary btn-sm" id='correct-two'>False</button>
             </div>
         </div>
     </div>
 
-    <div class='row'>
+    <div class='row' id='question-three'>
             <div class='col-md-12'>
                 <div class='text-center'>
                     <h4>Her breath is horrid.</h4>
-                    <button type="button" class="btn btn-primary btn-sm">True</button>
+                    <button type="button" class="btn btn-primary btn-sm" id='correct-three'>True</button>
                     <button type="button" class="btn btn-primary btn-sm">False</button>
                 </div>
             </div>
         </div>
-    
+
+
+  <div class='row' id='score'>
+    <div class='col-md-12'>
+        <div class='text-center'>
+          <div id='total-score'></div>
+        </div>
+    </div>
+  </div>
 
   
+
+  
+        
   </div>
     
 

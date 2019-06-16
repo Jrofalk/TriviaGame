@@ -1,3 +1,15 @@
-#questions{
+.questions{
     display: none;
+}
+
+#question-two{
+    display: none;
+}
+
+#question-three{
+    display:none;
+}
+
+#score{
+    display:none;
 }
