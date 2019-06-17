@@ -1,27 +1,29 @@
 
 
-var time = 100;
+var time = 10;
 var intervalId;
 var wins = 0;
-
 
 function run() {
     clearInterval(intervalId);
     intervalId = setInterval(decrement, 1000);
 }
 
+
+
 function decrement() {
     time--;
-    $('#show-number').text(time);
+    $('#timer').text(time);
     if (time === 0) {
         stop();
         $('#question-one').hide();
         $('#question-two').hide();
         $('#question-three').hide();
-        var tryAgain = $("<button>");
-          tryAgain.addClass('btn btn-secondary btn-lg');
-          tryAgain.html('Try Again')
-          $("#new-button").append(tryAgain);
+        var timesUp = $("<div>");
+          timesUp.html('Time is over!');
+          $('#timer').replaceWith(timesUp);
+
+        
     }
 }
 
@@ -30,72 +32,60 @@ function stop() {
 }
   
 
-
-
   run();
 
-
-
   $('#start').on('click', function(){
-    $('.questions').show();
-    $('#start').hide();
+    $('.questions').toggle();
+    $('#start').toggle();
   });
 
  $('#correct-one').on('click', function(){
     wins++;
     console.log(wins);
-    $('#question-two').show();
-    $('#question-one').hide();
+    $('#question-two').toggle();
+    $('#question-one').toggle();
   });
 
   $('#false-one').on('click', function(){
-    $('#question-two').show();
-    $('#question-one').hide();
+    $('#question-two').toggle();
+    $('#question-one').toggle();
   });
   
 
   $('#correct-two').on('click', function(){
     wins++;
     console.log(wins);
-    $('#question-three').show();
-    $('#question-two').hide();
+    $('#question-three').toggle();
+    $('#question-two').toggle();
   });
 
   $('#false-two').on('click', function(){
-    $('#question-three').show();
-    $('#question-two').hide();
+    $('#question-three').toggle();
+    $('#question-two').toggle();
   });
-
 
   $('#correct-three').on('click', function(){
     wins++;
     console.log(wins);
-    $('#question-three').hide();
-    $('#score').show()
+    $('#question-three').toggle();
+    $('#score').toggle()
     $('#total-score').text(wins);
+    stop();
   });
 
   $('#false-three').on('click', function(){
     console.log(wins);
-    $('#question-three').hide();
-    $('#score').show()
+    $('#question-three').toggle();
+    $('#score').toggle();
     $('#total-score').text(wins);
+    stop();
   });
 
   
 
 
 
-
   
-
-
-
-
-
-
-
-
 
 
 
