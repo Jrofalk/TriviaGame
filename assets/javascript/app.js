@@ -18,6 +18,10 @@ function decrement() {
         $('#question-one').hide();
         $('#question-two').hide();
         $('#question-three').hide();
+        var tryAgain = $("<button>");
+          tryAgain.addClass('btn btn-secondary btn-lg');
+          tryAgain.html('Try Again')
+          $("#new-button").append(tryAgain);
     }
 }
 
