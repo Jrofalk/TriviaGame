@@ -1,5 +1,4 @@
 
-
 var time = 50;
 var intervalId;
 var numCorrect = 0;
