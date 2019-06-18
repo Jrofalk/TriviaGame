@@ -3,10 +3,13 @@
 var time = 50;
 var intervalId;
 var numCorrect = 0;
+var clockRunning = false;
 
 function run() {
-    clearInterval(intervalId);
-    intervalId = setInterval(decrement, 1000);
+    if (!clockRunning) {
+        intervalId = setInterval(decrement, 1000);
+        clockRunning = true;
+}
 }
 
 function decrement() {
@@ -24,15 +27,14 @@ function decrement() {
           timesUp.html('Time is up! ' + numCorrect + ' out of 5 questions were answered correctly.');
           $('#timer').replaceWith(timesUp);  
     }
+    
 }
-
 function stop() {
     clearInterval(intervalId);
 }
   
-run();
-
   $('#start').on('click', function(){
+    run();
     $('.questions').toggle();
     $('#start').toggle();
   });
