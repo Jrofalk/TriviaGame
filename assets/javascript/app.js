@@ -3,14 +3,12 @@
 var time = 50;
 var intervalId;
 var numCorrect = 0;
-var clockRunning = false;
+
 
 function run() {
-    if (!clockRunning) {
         intervalId = setInterval(decrement, 1000);
-        clockRunning = true;
-    }
 }
+
 
 function decrement() {
     time--;
