@@ -38,7 +38,6 @@ run();
 
  $('#correct-one').on('click', function(){
     numCorrect++;
-    console.log(numCorrect);
     $('#question-two').toggle();
     $('#question-one').toggle();
   });
@@ -51,7 +50,6 @@ run();
 
   $('#correct-two').on('click', function(){
     numCorrect++;
-    console.log(numCorrect);
     $('#question-three').toggle();
     $('#question-two').toggle();
   });
@@ -63,7 +61,6 @@ run();
 
   $('#correct-three').on('click', function(){
     numCorrect++;
-    console.log(numCorrect);
     $('#question-four').toggle();
     $('#question-three').toggle();
   });
@@ -75,7 +72,6 @@ run();
 
   $('#correct-four').on('click', function(){
     numCorrect++;
-    console.log(numCorrect);
     $('#question-five').toggle();
     $('#question-four').toggle();
   });
@@ -88,7 +84,6 @@ run();
   
   $('#correct-five').on('click', function(){
     numCorrect++;
-    console.log(numCorrect);
     $('#question-five').toggle();
     $('#score').toggle()
     $('#total-score').html(numCorrect + ' out of 5 questions were answered correctly.');
@@ -96,7 +91,6 @@ run();
   });
 
   $('#false-five').on('click', function(){
-    console.log(numCorrect);
     $('#question-five').toggle();
     $('#score').toggle();
     $('#total-score').text(numCorrect + ' out of 5 questions were answered correctly.');
