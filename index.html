@@ -3,19 +3,19 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Trivia Game</title>
+    <title>James Turrell Trivia Game</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href='assets/css/style.css'>
 </head>
 
-<body>
+<body class='background'>
 
   <div class='container'>
       <div class='row'>
           <div class='col-md-12'>
               <div class='text-center'>
-                  <h1>Trivia Game</h1>
+                  <h1>James Turrell Trivia Game</h1>
               </div>
           </div>
       </div>
@@ -26,7 +26,7 @@
   <div class='row'>
     <div class='col-md-12'>
         <div class='text-center'>
-          <button type="button" class="btn btn-secondary btn-lg" id='start'>Start</button>
+          <button type="button" class='btn btn-outline-light' id='start'>Start</button>
         </div>
     </div>
   </div>
@@ -47,9 +47,9 @@
   <div class='row' id='question-one'>
       <div class='col-md-12'>
           <div class='text-center'>
-              <h4>Fritzi is a cat.</h4>
-              <button type="button" class="btn btn-primary btn-sm" id='correct-one'>True</button>
-              <button type="button" class="btn btn-primary btn-sm" id='false-one'>False</button>
+              <h4>Turrell's work <i>Roden Crater</i> is located within the cinder cone of an extinct volcano.</h4>
+              <button type="button" class="btn btn-outline-light" id='correct-one'>True</button>
+              <button type="button" class="btn btn-outline-light" id='false-one'>False</button>
           </div>
       </div>
   </div>
@@ -57,9 +57,9 @@
   <div class='row' id='question-two'>
         <div class='col-md-12'>
             <div class='text-center'>
-                <h4>She is well behaved.</h4>
-                <button type="button" class="btn btn-primary btn-sm" id='false-two'>True</button>
-                <button type="button" class="btn btn-primary btn-sm" id='correct-two'>False</button>
+                <h4>Turrell's skyspace <i>Green the Light</i> is located within the Los Angeles County Museum of Art .</h4>
+                <button type="button" class="btn btn-outline-light" id='false-two'>True</button>
+                <button type="button" class="btn btn-outline-light" id='correct-two'>False</button>
             </div>
         </div>
     </div>
@@ -67,12 +67,33 @@
     <div class='row' id='question-three'>
             <div class='col-md-12'>
                 <div class='text-center'>
-                    <h4>Her breath is horrid.</h4>
-                    <button type="button" class="btn btn-primary btn-sm" id='correct-three'>True</button>
-                    <button type="button" class="btn btn-primary btn-sm" id='false-three'>False</button>
+                    <h4>His first solo show was at the Pasadena Art Museum in 1967.</h4>
+                    <button type="button" class="btn btn-outline-light" id='correct-three'>True</button>
+                    <button type="button" class="btn btn-outline-light" id='false-three'>False</button>
                 </div>
             </div>
+    </div>
+
+        <div class='row' id='question-four'>
+                <div class='col-md-12'>
+                    <div class='text-center'>
+                        <h4>He was born in 1941.</h4>
+                        <button type="button" class="btn btn-outline-light" id='false-four'>True</button>
+                        <button type="button" class="btn btn-outline-light" id='correct-four'>False</button>
+                    </div>
+                </div>
+   </div>
+
+   
+   <div class='row' id='question-five'>
+        <div class='col-md-12'>
+            <div class='text-center'>
+                <h4>Turrell's primary medium is painting.</h4>
+                <button type="button" class="btn btn-outline-light" id='false-five'>True</button>
+                <button type="button" class="btn btn-outline-light" id='correct-five'>False</button>
+            </div>
         </div>
+</div>
 
 
   <div class='row' id='score'>
@@ -87,11 +108,6 @@
         
   </div>
     
-
-
-
-
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src='assets/javascript/app.js'></script>
 

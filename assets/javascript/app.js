@@ -1,15 +1,13 @@
 
 
-var time = 10;
+var time = 50;
 var intervalId;
-var wins = 0;
+var numCorrect = 0;
 
 function run() {
     clearInterval(intervalId);
     intervalId = setInterval(decrement, 1000);
 }
-
-
 
 function decrement() {
     time--;
@@ -19,11 +17,11 @@ function decrement() {
         $('#question-one').hide();
         $('#question-two').hide();
         $('#question-three').hide();
+        $('#question-four').hide();
+        $('#question-five').hide();
         var timesUp = $("<div>");
-          timesUp.html('Time is over!');
-          $('#timer').replaceWith(timesUp);
-
-        
+          timesUp.html('Time is over! ' + numCorrect + ' out of 5 were answered correctly.');
+          $('#timer').replaceWith(timesUp);  
     }
 }
 
@@ -31,8 +29,7 @@ function stop() {
     clearInterval(intervalId);
 }
   
-
-  run();
+run();
 
   $('#start').on('click', function(){
     $('.questions').toggle();
@@ -40,8 +37,8 @@ function stop() {
   });
 
  $('#correct-one').on('click', function(){
-    wins++;
-    console.log(wins);
+    numCorrect++;
+    console.log(numCorrect);
     $('#question-two').toggle();
     $('#question-one').toggle();
   });
@@ -53,8 +50,8 @@ function stop() {
   
 
   $('#correct-two').on('click', function(){
-    wins++;
-    console.log(wins);
+    numCorrect++;
+    console.log(numCorrect);
     $('#question-three').toggle();
     $('#question-two').toggle();
   });
@@ -65,19 +62,44 @@ function stop() {
   });
 
   $('#correct-three').on('click', function(){
-    wins++;
-    console.log(wins);
+    numCorrect++;
+    console.log(numCorrect);
+    $('#question-four').toggle();
     $('#question-three').toggle();
-    $('#score').toggle()
-    $('#total-score').text(wins);
-    stop();
   });
 
   $('#false-three').on('click', function(){
-    console.log(wins);
+    $('#question-four').toggle();
     $('#question-three').toggle();
+  });
+
+  $('#correct-four').on('click', function(){
+    numCorrect++;
+    console.log(numCorrect);
+    $('#question-five').toggle();
+    $('#question-four').toggle();
+  });
+
+  $('#false-four').on('click', function(){
+    $('#question-five').toggle();
+    $('#question-four').toggle();
+  });
+
+  
+  $('#correct-five').on('click', function(){
+    numCorrect++;
+    console.log(numCorrect);
+    $('#question-five').toggle();
+    $('#score').toggle()
+    $('#total-score').html(numCorrect + ' out of 5 questions were answered correctly.');
+    stop();
+  });
+
+  $('#false-five').on('click', function(){
+    console.log(numCorrect);
+    $('#question-five').toggle();
     $('#score').toggle();
-    $('#total-score').text(wins);
+    $('#total-score').text(numCorrect + ' out of 5 questions were answered correctly.');
     stop();
   });
 

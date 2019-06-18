@@ -1,15 +1,51 @@
+.background{
+  background: url('../images/Houston-Installation.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: "Futura LT W01 Light", Helvetica, Arial, sans-serif;
+  color: white;
+}
+
+
 .questions{
     display: none;
 }
 
+#start{
+    margin-top: 135px;
+}
+
+#timer{
+    margin-top: 40px;
+}
+
+#question-one{
+    margin-top: 135px;
+}
+
 #question-two{
     display: none;
+    margin-top: 135px;
 }
 
 #question-three{
-    display:none;
+    display: none;
+    margin-top: 135px;
+}
+
+#question-four{
+    display: none;
+    margin-top: 135px;
+}
+
+#question-five{
+    display: none;
+    margin-top: 135px;
 }
 
 #score{
-    display:none;
+    display: none;
+    margin-top: 135px;
 }
