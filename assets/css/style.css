@@ -13,6 +13,10 @@
     display: none;
 }
 
+#time-over{
+    margin-top: 135px;
+}
+
 #start{
     margin-top: 135px;
 }
