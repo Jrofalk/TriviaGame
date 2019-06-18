@@ -20,7 +20,7 @@ function decrement() {
         $('#question-four').hide();
         $('#question-five').hide();
         var timesUp = $("<div>");
-          timesUp.html('Time is over! ' + numCorrect + ' out of 5 questions were answered correctly.');
+          timesUp.html('Time is up! ' + numCorrect + ' out of 5 questions were answered correctly.');
           $('#timer').replaceWith(timesUp);  
     }
 }
