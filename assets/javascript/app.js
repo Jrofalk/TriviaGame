@@ -1,6 +1,6 @@
 
 
-var time = 50;
+var time = 10;
 var intervalId;
 var numCorrect = 0;
 
@@ -20,7 +20,7 @@ function decrement() {
         $('#question-four').hide();
         $('#question-five').hide();
         var timesUp = $("<div>");
-          timesUp.html('Time is over! ' + numCorrect + ' out of 5 were answered correctly.');
+          timesUp.html('Time is over! ' + numCorrect + ' out of 5 questions were answered correctly.');
           $('#timer').replaceWith(timesUp);  
     }
 }
