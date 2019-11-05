@@ -1,5 +1,9 @@
 # Trivia Game
 
+## Deployed Link:
+
+https://jrofalk.github.io/TriviaGame/
+
 <h1>Note:</h1>
 <p>This is a short trivia game based on the American visual artist James Turrell.</p>
 
